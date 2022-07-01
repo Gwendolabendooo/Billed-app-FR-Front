@@ -146,6 +146,9 @@ export default class {
     }
 
     bills.forEach(bill => {
+      //Enlève le listener
+      $(`#open-bill${bill.id}`).off("click")
+      //Ajoute le listener
       $(`#open-bill${bill.id}`).click((e) => this.handleEditTicket(e, bill, bills))
     })
 

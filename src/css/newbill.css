@@ -22,6 +22,19 @@
   border-radius: 5px;
 }
 
+input[data-error="true"]{
+  border-color: red!important;
+}
+
+input[data-error="true"] + .error-message{
+  display: block!important;
+}
+
+.error-message{
+  color: red;
+  display: none;
+}
+
 label {
   font-style: normal;
   font-weight: 500;
